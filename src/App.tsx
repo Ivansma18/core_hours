@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { AppLayout } from './layouts/AppLayout';
+import { Dashboard } from './components/Dashboard';
 
-function App() {
+const App: React.FC =() => {
   return (
-    <div className="App">
-      Core Hours
-    </div>
+    <AppLayout>
+      <Dashboard />
+    </AppLayout>
   );
 }
 
